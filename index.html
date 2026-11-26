@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-theme="harbor">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eli Moog</title>
+  <meta name="description" content="Eli Moog — Democratic Communications, Chicago">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <style>
+    [data-theme="harbor"]   { --bg:#0B2545; --card:#13315C; --line:#24497D; --text:#F4F7FB; --muted:#B7C8E0; --accent:#8DB8FF; --on-accent:#0B2545; }
+    [data-theme="glacier"]  { --bg:#EEF4FB; --card:#FFFFFF; --line:#C9D8EC; --text:#0B1F3A; --muted:#4A5D78; --accent:#1D5FD1; --on-accent:#FFFFFF; }
+    [data-theme="midnight"] { --bg:#070B14; --card:#111A2E; --line:#22314F; --text:#E8EEF9; --muted:#9AA8C2; --accent:#4D8DFF; --on-accent:#070B14; }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 40px; padding: 48px 24px; min-height: 100vh; text-align: center;
+    }
+    .bar { width: 56px; height: 4px; border-radius: 2px; background: var(--accent); margin: 0 auto 16px; }
+    h1 { margin: 0; font-family: "Space Grotesk", Inter, sans-serif; font-weight: 700;
+         font-size: clamp(40px, 9vw, 72px); line-height: 1.05; letter-spacing: -0.02em; }
+    p  { margin: 12px 0 0; font-size: clamp(17px, 2.5vw, 20px); color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+    nav a {
+      display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px;
+      border-radius: 12px; background: var(--card); border: 1px solid var(--line);
+      color: var(--text); text-decoration: none; font-weight: 500; font-size: 17px;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    nav a:hover, nav a:focus-visible { transform: translateY(-2px); border-color: var(--accent); }
+    nav a.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+    svg { width: 18px; height: 18px; }
+    footer { font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar" aria-hidden="true"></div>
+    <h1>Eli Moog</h1>
+    <p>Democratic Communications · Chicago</p>
+  </header>
+
+  <nav aria-label="Links">
+    <a href="https://www.linkedin.com/in/elimoog" target="_blank" rel="noopener">LinkedIn
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+    <a href="https://x.com/elimoog" target="_blank" rel="noopener">Twitter / X
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></a>
+  </nav>
+
+  <footer>© 2026 Eli Moog</footer>
+</body>
+</html>
